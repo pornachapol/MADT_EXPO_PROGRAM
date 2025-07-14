@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หลักสูตร MADT - การจัดการมหาบัณฑิต สาขาวิชาเทคโนโลยีและการวิเคราะห์ข้อมูลเพื่อการจัดการ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="0xl1xrudqx.png" alt="NIDA Logo" class="nida-logo">
+                <img src="orqrvvm87y.jpg" alt="MADT Logo" class="madt-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">เกี่ยวกับหลักสูตร</a></li>
+                <li><a href="#benefits" class="nav-link">ได้อะไรจากการเรียน</a></li>
+                <li><a href="#timeline" class="nav-link">แผนการเรียน</a></li>
+                <li><a href="#subjects" class="nav-link">รายวิชา</a></li>
+                <li><a href="#contact" class="nav-link">ติดต่อ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Link to AI Era Section -->
+    <section class="ai-era-link-section">
+        <div class="container">
+            <div class="ai-era-link-content">
+                <h2 class="section-title">How to Survive in the AI Era</h2>
+                <p class="hero-subtitle">เรียนรู้ทักษะที่จำเป็นสำหรับการอยู่รอดในยุค AI</p>
+                <div class="ai-era-preview">
+                    <p>💡 เข้าใจการทำงานของ AI และ Machine Learning</p>
+                    <p>🎯 เขียน Prompt ให้ AI ทำงานตรงตามวัตถุประสงค์</p>
+                    <p>🧠 คิดวิเคราะห์และเชื่อมโยงข้อมูลกับธุรกิจ</p>
+                    <p>⚡ เรียนรู้เครื่องมือ Data Skills ที่จำเป็น</p>
+                </div>
+                <button class="btn-ai-era" onclick="goToAiEra()">
+                    <i class="fas fa-rocket"></i> สำรวจทักษะ AI Era
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Era Navigation Button -->
+    <section class="ai-era-nav-section">
+        <div class="container">
+            <div class="ai-era-nav-content">
+                <button class="btn-go-ai-era" onclick="goToAiEra()">
+                    <i class="fas fa-rocket"></i> How to Survive in AI Era
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section id="main-content" class="main-content-section">
+        <div class="container">
+            <!-- Content will be added here -->
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    MADT NIDA
+                </h1>
+                <p class="hero-subtitle">Master of Science Program in Management of Analytics and Data Technologies (MADT)</p>
+                <p class="hero-institution">หลักสูตรจาก NIDA คณะสถิติประยุกต์</p>
+                <p class="hero-description">พัฒนาทักษะการวิเคราะห์ข้อมูลเชิงกลยุทธ์ และเทคโนโลยีข้อมูลสมัยใหม่ เพื่อเป็นผู้นำในยุคดิจิทัล</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('benefits')">เรียนแล้วได้อะไร</button>
+                    <button class="btn-secondary" onclick="scrollToSection('timeline')">ดูแผนการเรียน</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="data-visualization">
+                    <div class="chart-container">
+                        <div class="bar-chart">
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                            <div class="bar" style="height: 45%"></div>
+                            <div class="bar" style="height: 90%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                        </div>
+                        <div class="pie-chart">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="#3b4db8" stroke-width="10" stroke-dasharray="75 25" stroke-dashoffset="25"></circle>
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="#f37020" stroke-width="10" stroke-dasharray="25 75" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">หลักสูตรนี้ชื่ออะไร และมีความหมายอย่างไร</h2>
+            <div class="venn-diagram-container">
+                <div class="venn-diagram">
+                    <div class="circle circle-management">
+                        <div class="circle-content">
+                            <h3>Management</h3>
+                            <p>บริหารจัดการข้อมูล และนำข้อมูลไปใช้ตัดสินใจในระดับองค์กร</p>
+                        </div>
+                    </div>
+                    <div class="circle circle-analytics">
+                        <div class="circle-content">
+                            <h3>Analytics</h3>
+                            <p>วิเคราะห์ข้อมูลตั้งแต่ descriptive, diagnostic, predictive ถึง prescriptive</p>
+                        </div>
+                    </div>
+                    <div class="circle circle-data-tech">
+                        <div class="circle-content">
+                            <h3>Data Technologies</h3>
+                            <p>Big Data, Cloud, Real-Time Analytics, Data Governance</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">เรียนแล้วได้อะไร</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item expandable" data-aos="fade-up" data-delay="100">
+                    <div class="benefit-header">
+                        <div class="benefit-number">01</div>
+                        <h3>ความสามารถในการวิเคราะห์และจัดการข้อมูลเชิงกลยุทธ์</h3>
+                        <div class="expand-indicator">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="benefit-details">
+                        <ul>
+                            <li>นำข้อมูลมาใช้ในการตัดสินใจเชิงธุรกิจ</li>
+                            <li>ใช้เทคนิค analytics (BI, ML, AI) อย่างมีประสิทธิภาพ</li>
+                            <li>วิเคราะห์ข้อมูลเชิงลึกเพื่อหาโอกาสทางธุรกิจ</li>
+                            <li>สร้างแผนกลยุทธ์จากข้อมูลเชิงประจักษ์</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="benefit-item expandable" data-aos="fade-up" data-delay="200">
+                    <div class="benefit-header">
+                        <div class="benefit-number">02</div>
+                        <h3>ทักษะด้านเทคโนโลยีข้อมูล</h3>
+                        <div class="expand-indicator">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="benefit-details">
+                        <ul>
+                            <li>เข้าใจเทคโนโลยีที่เกี่ยวข้องกับการจัดเก็บ ประมวลผล และวิเคราะห์ข้อมูล</li>
+                            <li>สามารถใช้งานระบบ data pipeline, visualization, automation tools ได้</li>
+                            <li>ออกแบบและจัดการโครงสร้างข้อมูลขนาดใหญ่</li>
+                            <li>ใช้งาน Cloud platforms และ modern data stack</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="benefit-item expandable" data-aos="fade-up" data-delay="300">
+                    <div class="benefit-header">
+                        <div class="benefit-number">03</div>
+                        <h3>ทักษะการสื่อสารและเป็นผู้นำในทีมข้อมูล</h3>
+                        <div class="expand-indicator">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="benefit-details">
+                        <ul>
+                            <li>อธิบายผลลัพธ์ให้กับผู้บริหารหรือ non-technical team ได้</li>
+                            <li>ทำงานร่วมกับทีม IT, Marketing, Operations ได้อย่างมีประสิทธิภาพ</li>
+                            <li>นำเสนอข้อมูลเชิงลึกอย่างชัดเจนและน่าเชื่อถือ</li>
+                            <li>เป็นผู้นำการเปลี่ยนแปลงด้วยข้อมูล (Data-driven transformation)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="benefit-item expandable" data-aos="fade-up" data-delay="400">
+                    <div class="benefit-header">
+                        <div class="benefit-number">04</div>
+                        <h3>การเข้าใจบริบทธุรกิจที่แท้จริง</h3>
+                        <div class="expand-indicator">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="benefit-details">
+                        <ul>
+                            <li>ทุกวิชาเชื่อมโยงกับ use case หรือกรณีศึกษาจริง</li>
+                            <li>โครงการและการนำเสนอมีลักษณะ "Consulting-based" เพื่อให้พร้อมใช้งานในองค์กรจริง</li>
+                            <li>แก้ปัญหาธุรกิจจริงด้วยเครื่องมือวิเคราะห์ข้อมูล</li>
+                            <li>เข้าใจ ROI และผลกระทบของโครงการด้านข้อมูล</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Timeline ในการเรียน (แผนการเรียน)</h2>
+            <p class="timeline-duration">ประมาณ 2 ปี (4 เทอม + 1 เทอมฤดูร้อน)</p>
+            
+
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="subjects" class="subjects-section">
+        <div class="container">
+            <h2 class="section-title">รายวิชาทั้งหมด</h2>
+            <p class="subjects-subtitle">แบ่งตาม Core Skills ที่จะได้เรียน</p>
+            <div class="subjects-tabs">
+                <button class="tab-button active" data-term="management">Management</button>
+                <button class="tab-button" data-term="analytics">Analytics</button>
+                <button class="tab-button" data-term="data-technology">Data Technology</button>
+            </div>
+            
+            <div class="subjects-grid" id="management-subjects">
+                <!-- Management Core Skills -->
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>การคิดเชิงกลยุทธ์และการตัดสินใจด้วยข้อมูล</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        การเชื่อมโยงปัญหาธุรกิจกับการวิเคราะห์ข้อมูล และการวัดผลกระทบของ Analytics
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>แปลงปัญหาธุรกิจเป็นคำถามการวิเคราะห์ (Business Problems → Analytics Questions)</li>
+                                <li>ใช้ Business Frameworks เช่น KPI, Balanced Scorecard, Business Analytics Canvas</li>
+                                <li>วัด ROI ของโครงการ Analytics และ Value Chain Analysis</li>
+                                <li>ทำ Stakeholder Analysis และการสื่อสารกับผู้บริหาร</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>นักวิเคราะห์, ผู้จัดการ, Consultant, นักวางแผนกลยุทธ์</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>การจัดการข้อมูลองค์กรและ Data Governance</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        การออกแบบระบบจัดการข้อมูลที่มีคุณภาพ ปลอดภัย และใช้งานได้จริงในองค์กร
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>ออกแบบ Data Governance Framework สำหรับองค์กร</li>
+                                <li>การจัดเก็บ ผสาน และปกป้องข้อมูลในยุคใหม่</li>
+                                <li>Data Quality Management และ Data Lineage</li>
+                                <li>การสร้างนโยบายการใช้ข้อมูลที่เหมาะสมและปลอดภัย</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>ผู้จัดการข้อมูล, IT Manager, Data Officer, นักวางระบบองค์กร</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>Digital Transformation และการเปลี่ยนแปลงองค์กร</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        การนำองค์กรเข้าสู่ยุคดิจิทัลด้วยกลยุทธ์ข้อมูลและเทคโนโลยี
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>วางแผนและดำเนินการ Digital Transformation</li>
+                                <li>การสร้างวัฒนธรรม Data-driven ในองค์กร</li>
+                                <li>Change Management และการจัดการการต่อต้าน</li>
+                                <li>การประเมินความพร้อมและวัดผลสำเร็จของการเปลี่ยนแปลง</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>ผู้บริหารระดับสูง, หัวหน้าทีม IT, นักวางกลยุทธ์องค์กร</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>การทำงานเป็นทีมและ Professional Skills</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        ทักษะการทำงานร่วมกันและการสื่อสารในสภาพแวดล้อมข้อมูลและเทคโนโลยี
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>การทำงานร่วมกับทีมข้ามสายงาน (IT, Marketing, Operations)</li>
+                                <li>การสื่อสารข้อมูลเชิงเทคนิคให้ผู้ไม่ใช่สายเทคนิคเข้าใจ</li>
+                                <li>การนำเสนอผลการวิเคราะห์อย่างมืออาชีพ</li>
+                                <li>การสร้างความเชื่อมั่นและความน่าเชื่อถือในการใช้ข้อมูล</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>นักวิเคราะห์ข้อมูล, โครงการ Manager, ทีมข้อมูลทุกระดับ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subjects-grid hidden" id="analytics-subjects">
+                <!-- Analytics Core Skills -->
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>พื้นฐานการวิเคราะห์ข้อมูลและ Data Storytelling</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        ทักษะพื้นฐานในการทำความเข้าใจข้อมูล วิเคราะห์ และสื่อสารผลลัพธ์
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>เข้าใจ Data Life Cycle และ Analytics Workflow</li>
+                                <li>ประเภทของ Data Analytics: Descriptive, Diagnostic, Predictive, Prescriptive</li>
+                                <li>Data Quality Assessment และ Data Visualization</li>
+                                <li>Data Storytelling และการใช้ Excel, Tableau, Power BI</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>ผู้เริ่มต้นสาย Data, นักธุรกิจ, นักวิเคราะห์, หัวหน้าทีมที่ต้องใช้ Insight</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>การวิเคราะห์ข้อมูลเชิงลึกและ Machine Learning</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        เทคนิคสถิติขั้นสูงและ Machine Learning สำหรับการตัดสินใจทางธุรกิจ
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>เทคนิคสถิติขั้นสูงสำหรับการวิเคราะห์ธุรกิจ</li>
+                                <li>Machine Learning algorithms และการประยุกต์ใช้</li>
+                                <li>การวัดประสิทธิภาพของ Model และ Model Validation</li>
+                                <li>การแปลผลลัพธ์จาก ML เป็น Business Insights</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>Data Scientist, นักวิเคราะห์ขั้นสูง, ผู้พัฒนา AI Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>การประยุกต์ใช้ในเคสจริงและ Business Use Cases</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        การเรียนรู้จากกรณีศึกษาจริงในหลากหลายอุตสาหกรรม
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>การวิเคราะห์เคสจริงจากอุตสาหกรรมต่างๆ</li>
+                                <li>การระบุโอกาสใช้ Analytics ในธุรกิจ</li>
+                                <li>การออกแบบและติดตั้ง Analytics Solutions</li>
+                                <li>การถอดบทเรียนและปรับปรุงจากผลการดำเนินงาน</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>Business Analyst, Consultant, โครงการ Manager, ผู้ประยุกต์ Analytics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>Web Analytics และ Social Network Analysis</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        การวิเคราะห์พฤติกรรมออนไลน์และโซเชียลมีเดียเพื่อกลยุทธ์ธุรกิจ
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>การวิเคราะห์ข้อมูลจากเว็บไซต์และ Digital Platforms</li>
+                                <li>Social Network Analysis และการเข้าใจ Social Dynamics</li>
+                                <li>การวิเคราะห์ Customer Journey และ User Behavior</li>
+                                <li>การใช้ข้อมูลออนไลน์ในการวางกลยุทธ์การตลาด</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>Digital Marketer, Social Media Manager, E-commerce Analyst, UX Researcher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subjects-grid hidden" id="data-technology-subjects">
+                <!-- Data Technology Core Skills -->
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>Modern Data Architecture และ Technology Stack</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        การออกแบบและเลือกใช้เทคโนโลยีข้อมูลสมัยใหม่
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>เข้าใจ Modern Data Stack (Ingestion, ETL, Transformation, Storage, Governance)</li>
+                                <li>เปรียบเทียบ Centralized vs Distributed Computing</li>
+                                <li>การใช้งาน MapReduce, Spark, Data Lake vs Data Warehouse</li>
+                                <li>การเลือกและใช้ Data Integration Tools</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>Data Engineer, Data Architect, IT Manager, ผู้วางระบบข้อมูลองค์กร</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>Big Data Processing และ Real-time Analytics</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        การจัดการและวิเคราะห์ข้อมูลขนาดใหญ่แบบ Real-time
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>การวางแผนและดำเนินโครงการวิเคราะห์ข้อมูลขนาดใหญ่</li>
+                                <li>Stream Processing และ Real-time Analytics</li>
+                                <li>การออกแบบระบบที่รองรับ High Volume, Velocity, Variety</li>
+                                <li>Performance Optimization และ Scalability Planning</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>Data Engineer, System Architect, Performance Analyst, Big Data Specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>Advanced Analytics และ Consulting Skills</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        ทักษะการให้คำปรึกษาและการคิดเชิงกลยุทธ์ในงาน Analytics
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>การให้คำปรึกษาและแก้ปัญหาอย่างเป็นระบบ</li>
+                                <li>การคิดเชิงกลยุทธ์ในโลกของ Data Analytics</li>
+                                <li>การออกแบบ Analytics Solutions ระดับองค์กร</li>
+                                <li>การประเมินและปรับปรุงระบบ Analytics ที่มีอยู่</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>Senior Analyst, Analytics Consultant, Solution Architect, ผู้นำทีมข้อมูล</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>Enterprise Analytics Design และ Implementation</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        การออกแบบและพัฒนาระบบวิเคราะห์ข้อมูลระดับองค์กร
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>การออกแบบระบบ Analytics ระดับองค์กรที่ซับซ้อน</li>
+                                <li>การบูรณาการข้อมูลจากแหล่งต่างๆ</li>
+                                <li>การสร้าง Analytics Framework ที่ยั่งยืน</li>
+                                <li>การประยุกต์ใช้และแลกเปลี่ยนแนวทางระหว่างผู้เรียน</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>Enterprise Architect, CTO, Head of Analytics, System Integration Specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subject-card">
+                    <div class="subject-header">
+                        <h3>Independent Project และ Real-world Implementation</h3>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="subject-preview">
+                        โครงการอิสระที่นำทักษะทั้งหมดมาประยุกต์ใช้ในโปรเจกต์จริง
+                    </div>
+                    <div class="subject-details">
+                        <div class="detail-section">
+                            <h4><i class="fas fa-target"></i> Core Skills ที่ได้</h4>
+                            <ul>
+                                <li>การบูรณาการความรู้จากทุกสาขาในหลักสูตร</li>
+                                <li>การดำเนินโครงการจริงจากต้นจนจบ</li>
+                                <li>การสร้าง Impact ที่วัดผลได้ต่อองค์กรหรือธุรกิจ</li>
+                                <li>การนำเสนอและแปลงผลงานเป็น Business Value</li>
+                            </ul>
+                        </div>
+                        <div class="detail-section">
+                            <h4><i class="fas fa-users"></i> เหมาะสำหรับใคร</h4>
+                            <p>ผู้ที่ต้องการประยุกต์ใช้ความรู้ในงานจริง, Entrepreneur, Project Leader</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Development Section -->
+    <section id="ai-development" class="ai-development-section">
+        <div class="container">
+            <h2 class="section-title">การพัฒนาหลักสูตรเพื่อรองรับโลกธุรกิจในยุค AI</h2>
+            <div class="ai-development-content">
+                <p class="intro-text">ในโลกที่เทคโนโลยี AI กำลังเปลี่ยนแปลงรูปแบบการทำงานอย่างรวดเร็ว หลักสูตร MADT จึงมีแนวทางพัฒนาอย่างต่อเนื่อง เพื่อให้ผู้เรียนสามารถ</p>
+                
+                <div class="development-goals">
+                    <div class="goal-item">
+                        <h3><i class="fas fa-brain"></i> เข้าใจ AI อย่างลึกซึ้งในบริบทของธุรกิจ</h3>
+                        <p>ไม่ใช่แค่ใช้ AI ได้ แต่ต้อง <strong>เข้าใจว่าควรใช้เพื่ออะไร ใช้อย่างไรให้เกิดประโยชน์สูงสุด</strong> เช่น การตัดสินใจด้วยข้อมูล, การใช้ Generative AI ในการสร้างเนื้อหา หรือการใช้ Machine Learning เพื่อวิเคราะห์แนวโน้มตลาด</p>
+                    </div>
+                    
+                    <div class="goal-item">
+                        <h3><i class="fas fa-rocket"></i> ปรับตัวได้ไว และเติบโตไปพร้อมเทคโนโลยี</h3>
+                        <p>หลักสูตรจึงเตรียมเสริมวิชาใหม่ๆ ที่เกี่ยวข้องกับ:</p>
+                        <ul class="new-subjects">
+                            <li><strong>AI-Powered Decision Making</strong></li>
+                            <li><strong>Prompt Engineering</strong></li>
+                            <li><strong>Responsible & Ethical AI</strong></li>
+                            <li><strong>Human-AI Collaboration</strong></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="goal-item highlight">
+                        <h3><i class="fas fa-handshake"></i> ใช้ AI เป็นเครื่องมือ ไม่ใช่คู่แข่ง</h3>
+                        <p style="color: #000; font-weight: 500;">เพราะโลกอนาคตไม่ใช่การแข่งกับ AI แต่คือการทำงานร่วมกับมันอย่างชาญฉลาด</p>
+                        <p style="color: #333; font-weight: 400;">ผู้เรียนจะถูกฝึกให้ <strong>คิด วิเคราะห์ ออกแบบ และใช้ AI</strong> เพื่อเพิ่มขีดความสามารถของตนเองและองค์กร</p>
+                    </div>
+                </div>
+                
+                <div class="conclusion">
+                    <p class="conclusion-text">ด้วยแนวทางนี้ ผู้จบจาก MADT จะพร้อมเป็นผู้นำการเปลี่ยนแปลงในองค์กร ไม่ใช่เพียงผู้ตามเทคโนโลยี แต่เป็นผู้นำที่ <strong>"ใช้ AI อย่างเข้าใจ"</strong> และ <strong>"เติบโตอย่างมั่นคงในโลกที่ AI เป็นส่วนหนึ่งของทุกกระบวนการ"</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">สนใจสมัครเรียน</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>กดไลค์และติดตาม Facebook MADT</h3>
+                    <p class="facebook-subtitle">Management of Analytics and Data Technologies</p>
+                    <p>พร้อมเป็นผู้นำในยุคข้อมูลแล้วหรือยัง? มาร่วมเรียนรู้และพัฒนาทักษะที่จำเป็นสำหรับการเป็น Data Leader ในอนาคต</p>
+                    
+                    <div class="qr-code-section">
+                        <img src="gqlmynuedi.png" alt="Facebook QR Code MADT" class="qr-code">
+                        <p class="qr-description">สแกน QR Code เพื่อติดตาม Facebook Page</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
