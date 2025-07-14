@@ -848,10 +848,10 @@ body {
 
 /* AI Era Link Section */
 .ai-era-link-section {
-    padding: 80px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background: linear-gradient(120deg, #ffffff 0%, #f8f9fa 100%);
-    position: relative;
-    overflow: hidden;
 }
 
 .ai-era-link-content {
