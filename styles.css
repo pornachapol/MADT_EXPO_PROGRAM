@@ -848,7 +848,8 @@ body {
 
 /* AI Era Link Section */
 .ai-era-link-section {
-    padding: 200px 0;
+    min-height: 100vh;
+    padding: 80px 0;
     background: linear-gradient(120deg, #ffffff 0%, #f8f9fa 100%);
     position: relative;
     overflow: hidden;
